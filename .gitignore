@@ -1,0 +1,68 @@
+# ==========================================
+# Python & Byte-compiled files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Jupyter Notebooks & Data Science Caches
+# ==========================================
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.hydra/
+.wandb/
+wandb/
+
+# ==========================================
+# Datasets & Large Files (CRITICAL FOR fNIRS)
+# ==========================================
+# Ignore all raw/processed data inside data folder except the .gitkeep placeholder
+data/*
+!data/.gitkeep
+*.fif
+*.snirf
+*.mat
+*.csv
+*.h5
+*.hdf5
+*.npz
+
+# ==========================================
+# Model Checkpoints & Artifacts
+# ==========================================
+models/*
+!models/.gitkeep
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.onnx
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.local
+.env.*.local
+
+# ==========================================
+# IDEs, Editors & OS Files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
